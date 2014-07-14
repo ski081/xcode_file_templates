@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.objective-c-source</string>
+		<string>public.objective-c-plus-plus-source</string>
+	</array>
+	<key>Description</key>
+	<string>A Kiwi test spec</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.m</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>testClass</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>NotPersisted</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>Test for</string>
+			<key>Description</key>
+			<string>The class which will be tested.</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_testClass:identifier___Specs</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>2</string>
+	<key>Summary</key>
+	<string>A Kiwi test spec file.</string>
+</dict>
+</plist>
